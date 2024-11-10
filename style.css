@@ -1,0 +1,73 @@
+body{
+  background-color: #f2f2f2; 
+  font-family: Garamond, serif; 
+}
+.task-menu{
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+}
+.warning{
+  color: white; 
+}
+.error{
+  visibility: hidden; 
+  display: flex; 
+  flex-direction: column; 
+  order: 2;
+  text-align: center; 
+  background-color: #ff5c5c; 
+  border-radius: 10px; 
+  height: 50px; 
+}
+button{
+  color: white;
+  border-width: 0 0 0 0;
+	box-sizing: border-box;
+  font-size: 11px;
+	padding: 12px;
+  background-color: #1dd2af; 
+}
+input{
+  background-color: #313e50; 
+  border-width: 0 0 0 0;
+  font-size: 30px; 
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  color: #cdcdcd;
+}
+button:hover{
+  background-color: #68f3d7;
+}
+
+.task:hover > .fa-ban {
+  visibility: visible
+}
+
+.fa-ban:hover{
+  color: red; 
+}
+
+.enterArea{
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+.task{
+  display: flex; 
+  justify-content: space-between;
+  align-items: center; 
+  height: 100%; 
+  width: 100%;
+  background-color: white; 
+  font-size: 30px; 
+}
+.fa-ban{
+  font-size: 15px; 
+  margin: 10px; 
+  color: gray; 
+  visibility: hidden; 
+}
